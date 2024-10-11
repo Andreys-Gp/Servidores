@@ -1,0 +1,28 @@
+
+Router>enable 
+Router#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#ip route 192.168.1.0 255.255.255.0 10.0.0
+                                                  ^
+% Invalid input detected at '^' marker.
+	
+Router(config)#ip route 192.168.1.0 255.255.255.0 10.0.0.2
+Router(config)#exit 
+Router#
+Router#
+
+
+
+------------------------------------------------------------------
+
+Router>enable 
+Router#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#ip route 192.158.0.0 255.255
+                                    ^
+% Invalid input detected at '^' marker.
+	
+Router(config)#ip route 192.168.0.0 255.255.255.0 10.0.0.2
+%Invalid next hop address (it's this router)
+Router(config)#ip route 192.168.0.0 255.255.255.0 10.0.0.1
+Router(config)#
